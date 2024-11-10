@@ -57,6 +57,7 @@ function init() {
 
 function loadModel() {
     let modelPath = `${import.meta.env.BASE_URL}models/table.glb`;
+    console.log(import.meta.env.BASE_URL)
     new GLTFLoader().load(
         modelPath,
         function (gltf) {
